@@ -235,9 +235,13 @@ var threeSum = function(nums) {
  function miniMaxSum(arr) {
     let sum = arr.reduce((a,b) => {
         return a + b;
-    });
-    const minSum = sum - Math.max(...arr);
-    const maxSum = sum - Math.min(...arr);
+    }); // This adds up all numbers in a given array
+    const minSum = sum - Math.max(...arr); // Iterates over 
+    // the array to find the highest number of array, then
+    // subtracts that number from the sum to get the minSum
+    const maxSum = sum - Math.min(...arr); // Iterates over
+    // the array to find the lowest number of array, then
+    // subtracts that number from the sum to get the maxSum
     console.log(minSum + " " + maxSum);
  }
  
