@@ -1,0 +1,23 @@
+Software Engineering Skills Focus:
+
+Everyday (1 algo per day - test in js, ruby)
+
+Monday: HTML, CSS, & JavaScript (vanilla, vue, react, angular, and jquery)
+Tuesday: Full Stack (backend) App (keep it simple) -> Mongo, node, mongoose, etc.
+Wednesday: Ruby on Rails
+Thursday: Python & Django
+Friday: New Framework, language, git practice, etc. 
+Saturday: Data/Object Types (any language)
+Sunday: Push Weekly Algo Solutions to Github
+
+Job Search Requirements: 
+
+1. Send out applications
+2. Write Blog Post (what I did software engineering wise)
+3. Share an article (1 per week)
+4. Write a linkedin post (1 per week - not including blog post)
+5. Add more linkedin connections (ongoing - goal: 500+)
+6. Make 3-5 github commits (should be done during software engineering skills practice)
+7. Keep in contact with cohort 11
+
+

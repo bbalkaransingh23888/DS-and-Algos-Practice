@@ -1,0 +1,14 @@
+//Week of 10/19/2020
+
+//Simple Array Sum
+
+//JavaScript
+
+function simpleArraySum(ar) {
+    let sum = 0
+    let i = 0
+    for(i=0; i<ar.length; i++){
+        sum += ar[i]
+    } return sum
+}
+simpleArraySum(1,2,3)
