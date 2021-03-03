@@ -229,3 +229,7 @@ var threeSum = function(nums) {
      }
      return sumArr
  };
+
+ // MiniMaxSum - Hackerrank
+
+ 
