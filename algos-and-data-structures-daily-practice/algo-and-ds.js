@@ -232,4 +232,12 @@ var threeSum = function(nums) {
 
  // MiniMaxSum - Hackerrank
 
+ function miniMaxSum(arr) {
+    let sum = arr.reduce((a,b) => {
+        return a + b;
+    });
+    const minSum = sum - Math.max(...arr);
+    const maxSum = sum - Math.min(...arr);
+    console.log(minSum + " " + maxSum);
+ }
  
