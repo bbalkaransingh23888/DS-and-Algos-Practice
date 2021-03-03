@@ -1,10 +1,11 @@
 //Simple Array Sum - Hackerrank
 
 function simpleArraySum(ar) {
-    let sum = 0
+    let sum = 0 // set sum to 0
     let i = 0
     for(i=0; i<ar.length; i++){
         sum += ar[i]
+        // add all numbers of array
     } return sum
 }
 simpleArraySum(1,2,3)
