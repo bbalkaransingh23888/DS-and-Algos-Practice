@@ -247,4 +247,18 @@ var threeSum = function(nums) {
  }
  
  //Birthday Cake Candles - Hackerrank
- 
+ function birthdayCakeCandles(candles) {
+    let howMany = 0;
+    let highNbr = 0;
+    //
+    candles.forEach(item => {
+        if(item>highNbr){
+            highNbr = item;
+            howMany = 1;
+        }
+        else if(item === highNbr){
+            howMany++;
+        }
+    });
+    return howMany;
+}
