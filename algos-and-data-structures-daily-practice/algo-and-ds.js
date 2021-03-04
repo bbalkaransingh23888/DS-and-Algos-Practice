@@ -253,13 +253,13 @@ var threeSum = function(nums) {
     // create variable to represent the tallest candle (highNbr)
     // create variable to represent how many instances of tallest candle (howMany)
     candles.forEach(item => {
-        if(item>highNbr){
-            highNbr = item;
+        if(i>highNbr){
+            highNbr = i;
             howMany = 1;
             //for each element in array, if an element is higher than the current highNbr,
             //set highNbr equal to item, set howMany equal to 1
         }
-        else if(item === highNbr){
+        else if(i === highNbr){
             howMany++;
             //if any array element is equal to the highNbr, increment howMany
         }
