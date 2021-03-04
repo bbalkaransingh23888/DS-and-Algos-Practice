@@ -267,3 +267,5 @@ var threeSum = function(nums) {
     return howMany;
     //return howMany to finish problem;
 }
+
+//Time Conversion - Hackerrank
