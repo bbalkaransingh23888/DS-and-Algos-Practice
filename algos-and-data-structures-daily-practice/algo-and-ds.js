@@ -246,3 +246,5 @@ var threeSum = function(nums) {
     console.log(minSum + " " + maxSum);
  }
  
+ //Birthday Cake Candles - Hackerrank
+ 
