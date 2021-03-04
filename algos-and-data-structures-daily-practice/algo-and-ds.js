@@ -250,15 +250,20 @@ var threeSum = function(nums) {
  function birthdayCakeCandles(candles) {
     let howMany = 0;
     let highNbr = 0;
-    //
+    // create variable to represent the tallest candle (highNbr)
+    // create variable to represent how many instances of tallest candle (howMany)
     candles.forEach(item => {
         if(item>highNbr){
             highNbr = item;
             howMany = 1;
+            //for each element in array, if an element is higher than the current highNbr,
+            //set highNbr equal to item, set howMany equal to 1
         }
         else if(item === highNbr){
             howMany++;
+            //if any array element is equal to the highNbr, increment howMany
         }
     });
     return howMany;
+    //return howMany to finish problem;
 }
