@@ -272,9 +272,15 @@ var threeSum = function(nums) {
 
 function timeConversion(s) {
     const timeArr = s.slice(0,8).split(':');
+    //split the string, turn it into array to isolate AM/PM
     timeArr[0] = (s.indexOf('PM') > -1) ?
              (timeArr[0] == 12 ? '12' : Number(timeArr[0]) + 12) :
              (timeArr[0] == 12 ? '00' : timeArr[0]);
+
+    //This is saying that if PM exists in the array/split string,
+    //add 12 to the hour number to put it into military time. Else,
+    //if it is AM, it should give the number as stated, except if
+    //it says 12 in which case the hour should say 00. 
              
      return timeArr.join(':');
  }
