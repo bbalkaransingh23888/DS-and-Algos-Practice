@@ -269,3 +269,13 @@ var threeSum = function(nums) {
 }
 
 //Time Conversion - Hackerrank
+
+function timeConversion(s) {
+    const timeArr = s.slice(0,8).split(':');
+    timeArr[0] = (s.indexOf('PM') > -1) ?
+             (timeArr[0] == 12 ? '12' : Number(timeArr[0]) + 12) :
+             (timeArr[0] == 12 ? '00' : timeArr[0]);
+             
+     return timeArr.join(':');
+ }
+ 
