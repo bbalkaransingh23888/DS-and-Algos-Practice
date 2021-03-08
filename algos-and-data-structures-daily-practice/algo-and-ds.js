@@ -303,3 +303,23 @@ function timeConversion(s) {
     }return delLetters;
     //return the delLetters counter to get the desired output
 }
+
+//Beautiful Binary String - Hackerrank
+function beautifulBinaryString(b) {
+    let str = b.split("");
+    //should turn the input string into an array
+    let count = 0;
+    //initializes a variable to represent the amount of times
+    //the '010' substring is changed to '011'
+    
+    for(let i = 0;i<str.length;i++){
+       if(str[i] === 0 && str[i+1] === 1 && str[i+2] === 0){
+           count++;
+           str[i+2]+=1;
+           //For the length of the string, compare a group of three 
+           //elements. If they are '0', '1', '0' in that order, change 
+           //the second '0' to a '1' and increment count.
+       }
+   } return count;
+   //return the amount of times the '010' substring had to be changed
+}
