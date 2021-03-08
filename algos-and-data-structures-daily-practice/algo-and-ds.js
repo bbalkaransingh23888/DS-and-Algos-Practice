@@ -287,13 +287,19 @@ function timeConversion(s) {
  
  //Alternating Characters - Hackerrank
  function alternatingCharacters(s) {
-    let delLetters = 0;
+    let delLetters = 0; // This initializes a variable to represent
+    //the repeated/deleted letters to be incremented and returned
+    //once the code runs
     for (let i = 0; i < s.length; i++){
         if(s[i] === s[i+1]){
             delLetters++;
+            //if the current letter is the same as the next letter
+            //increment delLetters variable to represent the deleted letters.
         }else {
             continue;
+            //if the letter is different from the next letter, continue
+            //running the code
         }
     }return delLetters;
-
+    //return the delLetters counter to get the desired output
 }
