@@ -323,3 +323,6 @@ function beautifulBinaryString(b) {
    } return count;
    //return the amount of times the '010' substring had to be changed
 }
+//Note - this solution works for 4/12 test cases...and solutions
+//that use similar logic in different languages work for all test cases
+//not sure what the problem is
