@@ -145,23 +145,33 @@ var addTwoNumbers = function(l1, l2) {
 // Longest SubString w/o Repeating Characters - Leetcode
 
 var lengthOfLongestSubstring = function(s) {
-    if (s.length === 0) {return 0}
+    if (s.length === 0) {return 0} // if there is no string, return 0
     let subSet = new Set()
     let i = 0
     let j = 0
     let max = 0
     
     while (j < s.length){
+        //while j is less than the length of the array, 
+        //or while we are still going through the array
         if(!subSet.has(s[j])){
             subSet.add(s[j])
             j++
+            //if the subSet does not have the letter
+            //represented by the j element of the s string,
+            //add it to the subset and check the next one
         } else {
             subSet.delete(s[i])
             i++
+            //if the subSet does have the letter, move on to the next
+            //letter/element of the string without adding it to the subset
         }
         max = Math.max(max, subSet.size)
+        //check the size of the subset using the Math.max method, which finds the
+        //max number of its contents
     }
     return max
+    //return the max, which should be the number of elements/letters in the subSet
 };
 
 //Longest Palindromic Substring - Leetcode (Not Complete, but passes initial example test case)
@@ -326,3 +336,21 @@ function beautifulBinaryString(b) {
 //Note - this solution works for 4/12 test cases...and solutions
 //that use similar logic in different languages work for all test cases
 //not sure what the problem is
+
+// Two Sum - Leetcode
+var twoSum = function(nums, target) {
+    let addUp = [];
+    for(let i=0;i<=nums.length;i++){
+        for(let j=i+1;j<=nums.length;j++){
+            if(nums[i]+nums[j]===target){
+                addUp.push(i);
+                addUp.push(j);
+            }
+        }
+    }return addUp
+};
+// console.log(twoSum([2,7,11,15],9));
+// console.log(twoSum([3,2,4], 6));
+// console.log(twoSum([3,3],6));
+// console.log(twoSum([3,2,1],7));
+
