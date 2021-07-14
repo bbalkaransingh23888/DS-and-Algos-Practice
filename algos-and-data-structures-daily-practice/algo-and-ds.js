@@ -354,3 +354,32 @@ var twoSum = function(nums, target) {
 // console.log(twoSum([3,3],6));
 // console.log(twoSum([3,2,1],7));
 
+//Reverse Integer - Leetcode (most test cases passed, but submission not accepted)
+
+var reverse = function(x) {
+    let min = Math.pow(-2^31); //calculates minimum amount and sets it to min
+    let max = Math.pow(2^32)-1; //calculates maximum amount and sets it to max
+    let ifNeg = x < 0 ? true : false; //checks if x is a positive or negative number
+    
+    //if x is a negative number
+    if(ifNeg){
+        x = -x
+    }
+    let rev = 0
+    //this reverses the digits that make up x by dividing the number repeatedly by 10
+    while(x > 0){
+        rev = rev*10+x%10
+        x = parseInt(x/10)
+    }
+    //if a number is outside the desired range, return 0 
+    if(rev>=max || rev<=min){
+        return 0;
+    }
+    //if the number is negative, make it negative per ifNeg
+    return ifNeg ? -rev : rev
+};
+
+reverse(123);
+reverse(-123);
+reverse(120);
+reverse(0);
